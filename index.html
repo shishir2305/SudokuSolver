@@ -1,18 +1,75 @@
 <html>
 <head>
   <title></title>
-  <script type="text/javascript" src="sudoku.js"></script>
-  <!-- <script type="text/javascript" src="analytics.js"></script> -->
-  <style type="text/css">
+  <script src="sudoku.js"></script>
+  <style >
 
-    body { font-family: Calibri, sans-serif; }
-    #container { text-align: center }
-    table { border-collapse: collapse; font-size: 2em; margin: 0 auto; }
-    colgroup, tbody { border: solid medium; }
-    td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
-    button { margin-top: 15px; font-size: 1.5em; }
+body {
+      font-family: Calibri, sans-serif;
+      background-color: #f1f1f1;
+    }
     
-    padd{padding-bottom: 100px;}
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    table {
+      border-collapse: collapse;
+      font-size: 1.6em;
+      margin: 0 auto;
+    }
+
+    colgroup,
+    tbody {
+      border: solid medium;
+    }
+
+    td {
+      border: solid thin;
+      height: 2em;
+      width: 2em;
+      text-align: center;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    td[contenteditable="true"] {
+      cursor: pointer;
+    }
+
+    button {
+      margin-top: 15px;
+      font-size: 1.5em;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #solve-button {
+      margin-right: 10px;
+    }
+
+    #clear-button {
+      background-color: #f44336;
+    }
+
+    #clear-button:hover {
+      background-color: #d32f2f;
+    }
   </style>
 </head>
 <body>
